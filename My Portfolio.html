@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/Untitled-1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/016/247/926/small_2x/creativity-to-create-new-idea-imagination-or-invention-inspiration-education-or-genius-idea-writing-content-or-boost-creative-thinking-concept-man-riding-pencil-rocket-from-opening-lightbulb-vector.jpg') no-repeat center center fixed;
+            background-size: page;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(121, 117, 117, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+        .navbar a:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function showPage(page) {
+            document.querySelectorAll('.content').forEach(content => content.classList.add('hidden'));
+            document.getElementById(page).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="javascript:void(0)" onclick="showPage(&#39;home&#39;)">Home</a>
+        <a href="javascript:void(0)" onclick="showPage(&#39;about&#39;)">About</a>
+        <a href="javascript:void(0)" onclick="showPage(&#39;projects&#39;)">Projects</a>
+        <a href="https://www.instagram.com/arun_techtoent1234/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/yourchannel" target="_blank">YouTube</a>
+    </div>
+
+    <div class="container">
+        <div id="home" class="hidden">
+            <h1>Welcome to My Portfolio</h1>
+            
+        </div>
+        <div id="about" class="content hidden">
+            <h1>About Me</h1>
+            <p>Arun <br>                                                                                                                                            ⛪pala, Gangavali,<br> 											 PO: Gangawali, <br>                                                                                                                                                         Dist: Bulandshahr,Uttar Pradesh, 203129
+                arunchouhan264@gmail.com <br> 
+                +91 6397422837<br> 
+                
+                
+                Objective<br> 
+                Dedicated and detail-oriented BCA 3rd semester student with expertise in computer operations and accounting. Seeking a position in this company to leverage my skills in MS Office Suite, Tally Prime, HTML,and C programming to contribute to organizational success.<br> 
+                
+                Education<br> 
+                Bachelor of Computer Applications (BCA)<br> 
+                SBMT, bulandshahar<br> 
+                Expected Graduation: july, 2026<br> 
+                Current Semester: 3rd<br> 
+                12th Grade<br> 
+                UP Board<br> 
+                2023<br> 
+                Percentage: 70%<br> 
+                10th Grade<br> 
+                UP Board<br> 
+                2021<br> 
+                Percentage: 80%<br> 
+                
+                ________________________________________<br> 
+                Skills<br> 
+                •	Software Proficiency: MS Word, MS PowerPoint, MS Excel, Tally Prime,HTML, C Programming<br> 
+                •	Technical Skills: Video Editing, Formal Document Designing, Management<br> 
+                •	Accounting: Financial Accounting, Bookkeeping, Data Entry<br> 
+                •	Soft Skills: Attention to Detail, Time Management, Problem-Solving, Effective Communication<br> 
+                ________________________________________<br> 
+                Experience: fresher<br> 
+                ________________________________________<br> 
+                Certifications<br> 
+                •	Financial Computer Accounting(FCA) – NPITE COMPUTER INSTITUTE, June,2024 <br> 
+                </p>
+        </div>
+        <div id="projects" class="content hidden">
+            
+            <h1>My Projects <br><a href="https://www.youtube.com/channel/UCGQL4ZTn302YjgcLxyJSzVQ" target="_blank">(1)technologies </a><br> <a href="https://www.youtube.co/" target="_blank">(2)guidence </a></h1><h1></h1>
+        </div>
+    </div>
+m/@arunbro969
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
